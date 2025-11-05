@@ -38,7 +38,7 @@ console.log("Scelta Computer :", sceltaComputer);
 // L'utente inserisce un numero da 1 a 5
 
 const numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
-console.log("Numero Utente", numeroUtente)
+console.log("Numero Utente :", numeroUtente)
 
 //Generiamo un numero random (sempre da 1 a 5) 
 // per il computer (usando una funzione).
@@ -52,5 +52,27 @@ const numMin = 1;
 const numMax = 5;
 
 let numeroComputer = getRandomNumber(numMin, numMax)
-console.log("Numero Computer", numeroComputer);
+console.log("Numero Computer :", numeroComputer);
 
+// Sommiamo i due numeri
+
+let sumNumeri = (numeroComputer + numeroUtente)
+console.log("Somma Numeri :", sumNumeri);
+
+//Stabiliamo se la somma dei due numeri è pari o dispari 
+//(usando una funzione)
+
+function pariOrDispari(numero) {
+
+    if (numero % 2 == 0) {
+        return "pari";
+    }
+
+    return "dispari";
+}
+
+if (pariOrDispari(sumNumeri) == "pari") {
+    console.log("Il risultato è Pari");
+} else {
+    console.log("Il risultato è Dispari");
+}
