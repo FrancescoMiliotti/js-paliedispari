@@ -37,26 +37,20 @@ console.log("Scelta Computer :", sceltaComputer);
 
 // L'utente inserisce un numero da 1 a 5
 
-const sceltaNumero = parseInt(prompt("Scegli un numero da 1 a 5"));
-console.log("Numero Utente", sceltaNumero)
+const numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
+console.log("Numero Utente", numeroUtente)
 
 //Generiamo un numero random (sempre da 1 a 5) 
 // per il computer (usando una funzione).
 
-/**
- *  Restituisce un numero casuale
- *  @param {number} min  Intero che rappresenta il valore minimo
- *  @param {number} max  Intero che rappresenta il valore massimo
- *  @return {number} Intero casuale
- */
 function getRandomNumber(min, max) {
     const result = Math.floor(Math.random() * (max - min + 1) + min);
     return result;
 }
 
-const numMinimo = 1;
-const numMassimo = 5;
+const numMin = 1;
+const numMax = 5;
 
-for (let i = 0; i < 5; i++) {
-    alert( getRandomNumber(numMinimo, numMassimo) );
-}
+let numeroComputer = getRandomNumber(numMin, numMax)
+console.log("Numero Computer", numeroComputer);
+
