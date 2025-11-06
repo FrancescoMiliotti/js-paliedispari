@@ -24,6 +24,10 @@ console.log("Parola Invertita :", parolaToString)
 
 //Creare una funzione per capire se la parola inserita è palindroma.
 
+// Dichiarazione di funzione con parametro
+// Input: Accetta in ingresso una stringa
+// Elaborazione: Verifica se la stringa è uguale all'input utente
+// Output: Restituisce un alert se la parola è palindroma
 
 function palindroma(stringa) {
     
@@ -39,6 +43,8 @@ function palindroma(stringa) {
    
 
 }
+
+// invoco la funzione e stampo in console
 
 let ispalindroma = palindroma (parolaToString);
 console.log("la parola scelta è :", ispalindroma);
