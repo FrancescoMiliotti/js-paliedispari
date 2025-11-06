@@ -5,6 +5,7 @@ const inputUtente = prompt("Scrivi una parola");
 
 // salvo la parola in una variabile e stampo in console
 
+document.getElementById("inputUtente").innerHTML += `<div>${"La parola scelta è : "}${inputUtente}</div>`;
 console.log("Hai scelto la parola :", inputUtente);
 
 
@@ -47,6 +48,7 @@ function palindroma(stringa) {
 // invoco la funzione e stampo in console
 
 let ispalindroma = palindroma (parolaToString);
+document.getElementById("risultato").innerHTML += `<div>${"Risultato : "}${ispalindroma}</div>`;
 console.log("la parola scelta è :", ispalindroma);
 
 
