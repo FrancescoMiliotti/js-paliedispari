@@ -79,11 +79,13 @@ if (pariOrDispari(sumNumeri) == "pari") {
 
 //Dichiariamo chi ha vinto
 
-if (pariOrDispari(sumNumeri)==sceltaUtente) {
+if (pariOrDispari(sumNumeri) == sceltaUtente) {
 
+    alert("HAI VINTO!")
     console.log("Hai vinto!")
 }
 
 else {
+    alert("HAI PERSO!")
     console.log("Hai Perso!")
 };
