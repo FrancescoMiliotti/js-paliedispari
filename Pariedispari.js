@@ -10,9 +10,9 @@ const sceltaUtente = prompt("Vuoi scegliere Pari o Dispari?")
 // se l'utente scrive qualcosa di diverso metto un alert per dire che 
 // la scelta può essere solo pari o dispari
 
-if (sceltaUtente != "Dispari" && sceltaUtente != "Pari") {
+if (sceltaUtente != "dispari" && sceltaUtente != "pari") {
 
-    alert("Puoi scegliere solo Pari o Dispari");
+    alert("Puoi scegliere solo pari o dispari");
 
 }
 else {
@@ -26,12 +26,12 @@ let sceltaComputer = null
 
 // se la scelta utente è pari la scelta del computer sarà dispari e viceversa
 
-if (sceltaUtente === "Pari") {
+if (sceltaUtente === "pari") {
 
-    sceltaComputer = "Dispari";
+    sceltaComputer = "dispari";
 
 }
-else sceltaComputer = "Pari";
+else sceltaComputer = "pari";
 
 console.log("Scelta Computer :", sceltaComputer);
 
@@ -60,7 +60,7 @@ let sumNumeri = (numeroComputer + numeroUtente)
 console.log("Somma Numeri :", sumNumeri);
 
 //Stabiliamo se la somma dei due numeri è pari o dispari 
-//(usando una funzione)
+//(usando una funzione) e diamo un risultato della somma in console
 
 function pariOrDispari(numero) {
 
@@ -76,3 +76,14 @@ if (pariOrDispari(sumNumeri) == "pari") {
 } else {
     console.log("Il risultato è Dispari");
 }
+
+//Dichiariamo chi ha vinto
+
+if (pariOrDispari(sumNumeri)==sceltaUtente) {
+
+    console.log("Hai vinto!")
+}
+
+else {
+    console.log("Hai Perso!")
+};
